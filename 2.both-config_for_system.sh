@@ -41,6 +41,10 @@ rm -f /etc/hosts.bak
 echo
 echo 'check HAST'
 /usr/local/sbin/hast_boot.sh
+
+sleep 3
+echo 'start HAST monitoring'
+/usr/local/sbin/hast_monitor.sh > /tmp/hast.log 2>/dev/null &
 EOF
 
 cat << EOF > /etc/hosts
