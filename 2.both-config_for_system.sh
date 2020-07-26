@@ -52,12 +52,12 @@ cat << EOF > /etc/hosts
 127.0.0.1       localhost localhost.my.domain
 169.254.169.254 metadata.google.internal metadata
 
-10.140.0.11 coscup-cytseng-failover-1.c.pixnet-system-admin.internal coscup-cytseng-failover-1  # Added by Google
-10.140.0.12 coscup-cytseng-failover-2.c.pixnet-system-admin.internal coscup-cytseng-failover-2  # Added by Google
+10.140.0.11 coscup-$username-failover-1.c.pixnet-system-admin.internal coscup-$username-failover-1  # Added by Google
+10.140.0.12 coscup-$username-failover-2.c.pixnet-system-admin.internal coscup-$username-failover-2  # Added by Google
 169.254.169.254 metadata.google.internal  # Added by Google
 
-10.140.0.11 coscup-cytseng-failover-1
-10.140.0.12 coscup-cytseng-failover-2
+10.140.0.11 coscup-$username-failover-1
+10.140.0.12 coscup-$username-failover-2
 
 # delete below
 EOF
