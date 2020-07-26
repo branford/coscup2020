@@ -66,6 +66,8 @@ EOF
 /etc/rc.d/sysctl start
 kldload zfs
 
+sysctl -w vfs.zfs.vdev.aggregation_limit=131071
+
 echo 'check vfs.zfs.vdev.aggregation_limit'
 sysctl vfs.zfs.vdev.aggregation_limit
 
