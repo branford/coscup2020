@@ -1,5 +1,5 @@
 #!/bin/sh
-. ./config.sh
+. /usr/local/sbin/config.sh
 
 for i in sbin bin
 do

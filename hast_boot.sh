@@ -1,5 +1,5 @@
 #!/bin/sh
-. ./config.sh
+. /usr/local/sbin/config.sh
 
 echo $PATH
 for i in sbin bin
