@@ -16,7 +16,7 @@ else
     _zone=$zone1
 fi
 
-gcloud --project=$project beta compute reset --zone "asia-east1-$_zone" "coscup-$username-failover-$_num"
+gcloud --project=$project beta compute instances reset --zone "asia-east1-$_zone" "coscup-$username-failover-$_num"
 sleep 1
-gcloud --project=$project beta compute stop --zone "asia-east1-$_zone" "coscup-$username-failover-$_num"
+gcloud --project=$project beta compute instances stop --zone "asia-east1-$_zone" "coscup-$username-failover-$_num"
 
